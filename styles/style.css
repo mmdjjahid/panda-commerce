@@ -1,0 +1,192 @@
+.bag{
+    background: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+}
+.watch{
+    background: linear-gradient(to bottom, #FF9C35 0%, #FFD019 100%);
+
+}
+
+.shoe{
+    background: linear-gradient(to bottom, #4289FF 0%, #3F07F8 100%);
+    
+}
+
+body{
+    font-family: Poppins;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 10rem 31.25rem 25rem;
+    gap: 56px;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    padding: 3rem 10rem 4rem 10rem;
+}
+
+.searchContener{
+    position: relative;
+}
+
+.search{
+    border-radius: 64.125rem;
+    padding-top: 0.75rem;
+    padding-left: 1.75rem;
+    padding-bottom: 0.75rem;
+    background-color: #F1F1F1;
+    border: none;
+    width: 100%;
+}
+.searchIcon{
+    position: absolute;
+    top: 0.75rem;
+    left: auto;
+    right: 0;
+    color: #BABABA;
+}
+
+input::placeholder{
+    color: #CCCCCC;
+}
+
+nav ul{
+    display: flex;
+    gap: 24px;
+
+}
+nav li {
+    list-style: none;
+
+}
+nav li a{
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #707070;
+
+}
+
+
+
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bannerContainer{
+    display: grid;
+    grid-template-columns: 35rem 25rem;
+    gap: 8.75rem;
+    background-color: #FEEAE9;
+    padding: 4.25rem 2.875rem;
+    border-radius: 1rem;
+    
+}
+
+.bannerContent{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.bannerImg{
+    width: 100%;
+}
+
+.bannerTitle{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #1F1F1F;
+    margin: 0;
+}
+
+.bannerDis{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4E4E4E;
+    font-family: Inter;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+.price{
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: #FF136F;
+    margin: 0;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    background: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+    width: 25%;
+
+}
+
+
+.CategoriesContainer{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    
+    
+}
+
+.Categories{
+    display: grid;
+    grid-template-columns: repeat(3, 22.5rem);
+    gap: 1.6rem;
+    
+}
+
+.Categorie{
+    display: flex;
+    gap: 4.8rem;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+
+
+}
+
+.title, .Cname{
+    font-weight: 600;
+    font-size: 2.25rem;
+    color: #1F1F1F;
+}
+
+.Cname{
+    color: white;
+}
+
+
+@media screen and (max-width:900px){
+    header, .Categories{
+        grid-template-columns: auto;
+
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .bannerContainer{
+        grid-template-columns: auto;
+    }
+    .btn{
+        width: 100%;
+    }
+
+
+
+}
